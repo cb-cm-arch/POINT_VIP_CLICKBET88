@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CHECK POINT VIP</title>
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+
+  font-family:Arial,sans-serif;
+
+  background:
+  url("https://quick1.clickbet88vip-sultan.com/desktop.webp")
+  no-repeat center center fixed;
+
+  background-size:cover;
+
+  overflow:hidden;
+
+  color:white;
+}
+
+/* WRAPPER */
+.wrapper{
+
+  width:100%;
+  min-height:100vh;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  padding:20px;
+}
+
+/* MAIN BOX */
+.main-box{
+
+  width:90%;
+  max-width:430px;
+
+  border-radius:35px;
+
+  overflow:hidden;
+
+  background:
+  rgba(0,10,40,0.65);
+
+  backdrop-filter:blur(12px);
+
+  border:
+  1px solid rgba(0,255,255,0.3);
+
+  box-shadow:
+  0 0 35px rgba(0,150,255,0.45);
+
+  text-align:center;
+}
+
+/* CONTENT */
+.content{
+
+  padding:45px 25px;
+}
+
+/* LOGO */
+.logo{
+
+  margin-bottom:25px;
+}
+
+.logo img{
+
+  width:190px;
+
+  filter:
+  drop-shadow(0 0 12px rgba(0,180,255,0.8));
+}
+
+/* TITLE */
+.title{
+
+  font-size:28px;
+  font-weight:bold;
+
+  margin-bottom:35px;
+
+  color:white;
+
+  text-shadow:
+  0 0 10px rgba(0,180,255,0.7);
+}
+
+/* INPUT */
+.input-box{
+
+  width:100%;
+
+  padding:18px;
+
+  border:none;
+  outline:none;
+
+  border-radius:18px;
+
+  font-size:16px;
+
+  margin-bottom:30px;
+
+  text-align:center;
+}
+
+/* BUTTON */
+.btn{
+
+  width:100%;
+
+  padding:18px;
+
+  border:none;
+  border-radius:45px;
+
+  cursor:pointer;
+
+  font-size:20px;
+  font-weight:bold;
+
+  color:white;
+
+  background:
+  linear-gradient(
+    90deg,
+    #00cfff,
+    #0084ff
+  );
+
+  box-shadow:
+    0 0 20px rgba(0,180,255,0.7);
+
+  transition:0.3s;
+}
+
+.btn:hover{
+
+  transform:scale(1.03);
+
+  box-shadow:
+    0 0 30px rgba(0,200,255,1);
+}
+
+/* RESULT */
+#result{
+
+  margin-top:25px;
+
+  font-size:18px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+  .main-box{
+
+    width:95%;
+  }
+
+  .title{
+
+    font-size:24px;
+  }
+
+}
+/* TOP BANNER */
+.top-banner{
+
+  width:100%;
+
+  display:flex;
+  justify-content:center;
+
+  margin-top:25px;
+  margin-bottom:20px;
+}
+
+.top-banner img{
+
+  width:92%;
+  max-width:430px;
+
+  border-radius:22px;
+
+  border:
+  1px solid rgba(0,255,255,0.35);
+
+  box-shadow:
+    0 0 25px rgba(0,180,255,0.45),
+    0 0 45px rgba(0,120,255,0.25);
+
+  animation:bannerGlow 2s infinite alternate;
+}
+
+/* GLOW EFFECT */
+@keyframes bannerGlow{
+
+  from{
+
+    box-shadow:
+      0 0 15px rgba(0,180,255,0.35);
+  }
+
+  to{
+
+    box-shadow:
+      0 0 30px rgba(0,200,255,0.8);
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- TOP BANNER -->
+<div class="top-banner">
+
+  <img
+    src="https://clickbet88sedekahrejeki05.xyz/storage/promotionbanner/21d83117-be25-4807-bf68-9c40c38a9f16.jpeg"
+    alt="BONUS POINT VIP"
+  >
+
+</div>
+
+<div class="wrapper">
+
+  <div class="main-box">
+
+    <!-- CONTENT -->
+    <div class="content">
+
+      <!-- LOGO -->
+      <div class="logo">
+
+        <img
+          src="https://king2.cb88-rtpslot.com/new/logo.webp"
+          alt="CLICKBET88"
+        >
+
+      </div>
+
+      <!-- TITLE -->
+      <div class="title">
+        CHECK POINT VIP
+      </div>
+
+      <!-- INPUT -->
+      <input
+        type="text"
+        class="input-box"
+        placeholder="Enter User ID"
+        id="username"
+      >
+
+      <!-- BUTTON -->
+      <button class="btn" onclick="checkPoint()">
+        CHECK SEKARANG
+      </button>
+
+      <!-- RESULT -->
+      <div id="result"></div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+
+function checkPoint(){
+
+  var username =
+    document.getElementById("username").value;
+
+  if(username == ""){
+
+    alert("Masukkan Username");
+
+    return;
+  }
+
+  document.getElementById("result").innerHTML =
+    "🔥 Sedang mengecek point...";
+}
+
+</script>
+
+</body>
+</html>
