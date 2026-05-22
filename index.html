@@ -35,17 +35,26 @@ body{
   min-height:100vh;
 
   display:flex;
-  justify-content:center;
-  align-items:flex-start;
 
-  padding-top:100px;
+  justify-content:center;
+
+  align-items:center;
+
+  flex-direction:column;
+
+  margin-top:-250px;
 }
 
 /* MAIN BOX */
 .main-box{
 
   width:90%;
-  max-width:400px;
+
+  max-width:420px;
+
+  min-width:280px;
+
+  margin:auto;
 
   border-radius:35px;
 
@@ -55,12 +64,80 @@ body{
 
   backdrop-filter: blur(8px);
 
-  border: 1px solid rgba(0,255,255,0.25);
+  border: 3px solid #d6aa5d;
 
   box-shadow:
-  0 0 25px rgba(0,150,255,0.25);
+  0 0 20px rgba(214,170,93,0.45);
 
   text-align:center;
+}
+  /* RESPONSIVE MOBILE */
+@media screen and (max-width:768px){
+
+  .main-box{
+
+    width:92%;
+
+    max-width:340px;
+
+    min-width:auto;
+
+    border-radius:25px;
+  }
+
+  .content{
+
+    padding:28px 18px;
+  }
+
+  .logo img{
+
+    width:140px;
+  }
+
+  .title{
+
+    font-size:22px;
+
+    margin-bottom:20px;
+  }
+
+  .input-box{
+
+    padding:14px;
+
+    font-size:14px;
+  }
+
+  .btn{
+
+    width:70%;
+
+    padding:14px;
+
+    font-size:14px;
+  }
+
+}
+
+/* EXTRA SMALL PHONE */
+@media screen and (max-width:400px){
+
+  .main-box{
+
+    width:95%;
+  }
+
+  .logo img{
+
+    width:120px;
+  }
+
+  .title{
+
+    font-size:18px;
+  }
+
 }
 
 /* CONTENT */
@@ -79,8 +156,7 @@ body{
 
   width:190px;
 
-  filter:
-  drop-shadow(0 0 12px rgba(0,180,255,0.8));
+  filter:none;
 }
 
 /* TITLE */
@@ -119,28 +195,74 @@ body{
 /* BUTTON */
 .btn{
 
-  width:50%;
+  width:65%;
 
-  padding:18px;
+  padding:16px;
 
-  border:none;
   border-radius:45px;
+
+  border:4px solid #d6aa5d;
 
   cursor:pointer;
 
-  font-size:px;
+  font-size:16px;
   font-weight:bold;
 
-  color:white;
+  color:#f6d98b;
 
   background:
-  linear-gradient(
-    90deg,
-    #00cfff,
-    #0084ff
-  );
+    linear-gradient(
+      180deg,
+      #111111 0%,
+      #000000 50%,
+      #1a1a1a 100%
+    );
+
+  box-shadow:
+    0 0 10px rgba(214,170,93,0.5),
+    inset 0 2px 5px rgba(255,255,255,0.08);
+
+  text-shadow:
+    0 0 8px rgba(255,215,120,0.7);
 
   transition:0.3s;
+
+  position:relative;
+
+  overflow:hidden;
+}
+
+/* EFEK KILAU */
+.btn::before{
+
+  content:"";
+
+  position:absolute;
+
+  top:4px;
+  left:10%;
+
+  width:80%;
+  height:12px;
+
+  border-radius:30px;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.35),
+      transparent
+    );
+}
+
+/* HOVER */
+.btn:hover{
+
+  transform:scale(1.03);
+
+  box-shadow:
+    0 0 18px rgba(255,215,120,0.8),
+    inset 0 2px 5px rgba(255,255,255,0.15);
 }
 
 .btn:hover{
