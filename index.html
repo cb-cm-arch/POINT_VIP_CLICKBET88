@@ -51,16 +51,14 @@ body{
 
   overflow:hidden;
 
-  background:
-  rgba(0,10,40,0.65);
+  background: rgba(0, 20, 60, 0.18);
 
-  backdrop-filter:blur(12px);
+  backdrop-filter: blur(8px);
 
-  border:
-  1px solid rgba(0,255,255,0.3);
+  border: 1px solid rgba(0,255,255,0.25);
 
   box-shadow:
-  0 0 35px rgba(0,150,255,0.45);
+  0 0 25px rgba(0,150,255,0.25);
 
   text-align:center;
 }
@@ -186,37 +184,121 @@ body{
 
 .top-banner img{
 
-  width:92%;
+  width:35%;
   max-width:430px;
 
-  border-radius:22px;
+  border-radius:0;
 
-  border:
-  1px solid rgba(0,255,255,0.35);
+  border:none;
 
-  box-shadow:
-    0 0 25px rgba(0,180,255,0.45),
-    0 0 45px rgba(0,120,255,0.25);
+  box-shadow:none;
 
-  animation:bannerGlow 2s infinite alternate;
+  animation:none;
+}
+.top-banner{
+
+  width:100%;
+
+  display:flex;
+  flex-direction:column;
+
+  align-items:center;
+
+  margin-top:15px;
 }
 
-/* GLOW EFFECT */
-@keyframes bannerGlow{
+/* LOGO ATAS */
+.top-logo{
 
-  from{
+  width:50px;
 
-    box-shadow:
-      0 0 15px rgba(0,180,255,0.35);
+  margin-bottom:-25px;
+
+  z-index:10;
+
+  position:relative;
+}
+@media(max-width:768px){
+
+  /* LOGO ATAS */
+  .top-logo{
+
+    width:50px;
+
+    margin-bottom:-15px;
   }
 
-  to{
+  /* BANNER */
+  .banner-img{
 
-    box-shadow:
-      0 0 30px rgba(0,200,255,0.8);
+    width:30%;
   }
+
+  /* TITLE */
+  .title{
+
+    font-size:18px;
+
+    line-height:1.1;
+
+    margin-bottom:20px;
+  }
+
+  /* BOX */
+  .main-box{
+
+  width:90%;
+  max-width:400px;
+
+  min-width:400px;
 }
 
+  /* CONTENT */
+  .content{
+
+    padding:30px 20px;
+  }
+
+  /* INPUT */
+  .input-box{
+
+    padding:14px;
+
+    font-size:14px;
+  }
+
+  /* BUTTON */
+  .btn{
+
+    width:65%;
+
+    padding:14px;
+
+    font-size:14px;
+  }
+
+}
+  /* LOGO VIP */
+.top-logo{
+
+  width:30px;
+
+  margin-bottom:10px;
+}
+
+/* TEXT EXCLUSIVE */
+.banner-text{
+
+  width:220px;
+
+  margin-top:-10px;
+}
+/* BANNER */
+.banner-img{
+
+  width:35%;
+  max-width:430px;
+}
 </style>
 </head>
 
@@ -225,8 +307,17 @@ body{
 <!-- TOP BANNER -->
 <div class="top-banner">
 
+  <!-- LOGO ATAS -->
   <img
-    src="https://clickbet88sedekahrejeki05.xyz/storage/promotionbanner/21d83117-be25-4807-bf68-9c40c38a9f16.jpeg"
+    class="top-logo"
+    src="https://cdn.it-cg.group/cbvipmoneysite/uploads/kUXxhyccQK5IqfFFgHSXlkJ4iUJConb7N2BSRTLA.webp"
+    alt="LOGO"
+  >
+
+  <!-- BANNER -->
+  <img
+    class="banner-img"
+    src="https://cdn.it-cg.group/cbvipmoneysite/uploads/I7AnkOXPJk9RLIWhN7liARtSMB44HT2p5SEs0ULF.webp"
     alt="BONUS POINT VIP"
   >
 
