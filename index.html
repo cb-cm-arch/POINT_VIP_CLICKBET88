@@ -2,7 +2,11 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+/>
 
 <title>CHECK POINT VIP</title>
 
@@ -12,6 +16,11 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
+}
+
+html,body{
+  width:100%;
+  min-height:100%;
 }
 
 body{
@@ -24,14 +33,54 @@ body{
 
   background-size:cover;
 
-  overflow:hidden;
+  overflow-x:hidden;
 
   color:white;
 }
 
+/* TOP AREA */
+.top-banner{
+
+  width:100%;
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:center;
+
+  align-items:center;
+
+  padding-top:25px;
+
+  margin-bottom:-40px;
+
+  position:relative;
+
+  z-index:5;
+}
+
+/* LOGO VIP */
+.top-logo{
+
+  width:95px;
+
+  margin-bottom:10px;
+}
+
+/* BANNER */
+.banner-img{
+
+  width:78%;
+
+  max-width:320px;
+}
+
+/* WRAPPER */
 .wrapper{
 
   width:100%;
+
   min-height:100vh;
 
   display:flex;
@@ -40,137 +89,68 @@ body{
 
   align-items:center;
 
-  flex-direction:column;
-
-  margin-top:-250px;
+  padding:
+    20px
+    20px
+    120px;
 }
 
 /* MAIN BOX */
 .main-box{
 
-  width:90%;
+  width:100%;
 
-  max-width:420px;
+  max-width:340px;
 
-  min-width:280px;
-
-  margin:auto;
-
-  border-radius:35px;
+  border-radius:28px;
 
   overflow:hidden;
 
-  background: rgba(0, 20, 60, 0.18);
+  background:
+    rgba(0, 10, 35, 0.78);
 
-  backdrop-filter: blur(8px);
+  backdrop-filter:blur(10px);
 
-  border: 3px solid #d6aa5d;
+  border:2px solid #d6aa5d;
 
   box-shadow:
-  0 0 20px rgba(214,170,93,0.45);
+    0 0 18px rgba(214,170,93,0.35);
 
   text-align:center;
-}
-  /* RESPONSIVE MOBILE */
-@media screen and (max-width:768px){
-
-  .main-box{
-
-    width:92%;
-
-    max-width:340px;
-
-    min-width:auto;
-
-    border-radius:25px;
-  }
-
-  .content{
-
-    padding:28px 18px;
-  }
-
-  .logo img{
-
-    width:140px;
-  }
-
-  .title{
-
-    font-size:22px;
-
-    margin-bottom:20px;
-  }
-
-  .input-box{
-
-    padding:14px;
-
-    font-size:14px;
-  }
-
-  .btn{
-
-    width:70%;
-
-    padding:14px;
-
-    font-size:14px;
-  }
-
-}
-
-/* EXTRA SMALL PHONE */
-@media screen and (max-width:400px){
-
-  .main-box{
-
-    width:95%;
-  }
-
-  .logo img{
-
-    width:120px;
-  }
-
-  .title{
-
-    font-size:18px;
-  }
-
 }
 
 /* CONTENT */
 .content{
 
-  padding:45px 25px;
+  padding:
+    42px
+    22px;
 }
 
 /* LOGO */
 .logo{
 
-  margin-bottom:25px;
+  margin-bottom:20px;
 }
 
 .logo img{
 
-  width:190px;
-
-  filter:none;
+  width:170px;
 }
 
 /* TITLE */
 .title{
 
-  font-size:28px;
+  font-size:16px;
+
   font-weight:bold;
 
-  margin-bottom:35px;
+  margin-bottom:28px;
 
   color:white;
 
   text-shadow:
-  0 0 10px rgba(0,180,255,0.7);
+    0 0 10px rgba(0,180,255,0.7);
 }
 
 /* INPUT */
@@ -178,16 +158,17 @@ body{
 
   width:100%;
 
-  padding:18px;
+  padding:17px;
 
   border:none;
+
   outline:none;
 
   border-radius:18px;
 
-  font-size:16px;
+  font-size:14px;
 
-  margin-bottom:30px;
+  margin-bottom:28px;
 
   text-align:center;
 }
@@ -195,9 +176,9 @@ body{
 /* BUTTON */
 .btn{
 
-  width:65%;
+  width:72%;
 
-  padding:16px;
+  padding:15px;
 
   border-radius:45px;
 
@@ -205,7 +186,8 @@ body{
 
   cursor:pointer;
 
-  font-size:16px;
+  font-size:15px;
+
   font-weight:bold;
 
   color:#f6d98b;
@@ -240,9 +222,11 @@ body{
   position:absolute;
 
   top:4px;
+
   left:10%;
 
   width:80%;
+
   height:12px;
 
   border-radius:30px;
@@ -265,11 +249,6 @@ body{
     inset 0 2px 5px rgba(255,255,255,0.15);
 }
 
-.btn:hover{
-
-  transform:scale(1.03);
-}
-
 /* RESULT */
 #result{
 
@@ -281,175 +260,87 @@ body{
 /* MOBILE */
 @media(max-width:768px){
 
+  .wrapper{
+
+    padding-top:10px;
+  }
+
   .main-box{
 
-    width:95%;
+    max-width:320px;
   }
 
-  .title{
-
-    font-size:24px;
-  }
-
-}
-/* TOP BANNER */
-.top-banner{
-
-  width:100%;
-
-  display:flex;
-  justify-content:center;
-
-  margin-top:25px;
-  margin-bottom:20px;
-}
-
-.top-banner img{
-
-  width:35%;
-  max-width:430px;
-
-  border-radius:0;
-
-  border:none;
-
-  box-shadow:none;
-
-  animation:none;
-}
-.top-banner{
-
-  width:100%;
-
-  display:flex;
-  flex-direction:column;
-
-  align-items:center;
-
-  margin-top:15px;
-}
-
-/* LOGO ATAS */
-.top-logo{
-
-  width:50px;
-
-  margin-bottom:-25px;
-
-  z-index:10;
-
-  position:relative;
-}
-@media(max-width:768px){
-
-  /* LOGO ATAS */
-  .top-logo{
-
-    width:50px;
-
-    margin-bottom:-15px;
-  }
-
-  /* BANNER */
-  .banner-img{
-
-    width:30%;
-  }
-
-  /* TITLE */
-  .title{
-
-    font-size:18px;
-
-    line-height:1.1;
-
-    margin-bottom:20px;
-  }
-
-  /* BOX */
-  .main-box{
-
-  width:90%;
-  max-width:400px;
-
-  min-width:400px;
-}
-
-  /* CONTENT */
   .content{
 
-    padding:30px 20px;
+    padding:
+      38px
+      20px;
   }
 
-  /* INPUT */
-  .input-box{
+  .logo img{
 
-    padding:14px;
-
-    font-size:14px;
+    width:160px;
   }
 
-  /* BUTTON */
+  .title{
+
+    font-size:15px;
+  }
+
   .btn{
 
-    width:65%;
-
-    padding:14px;
+    width:75%;
 
     font-size:14px;
   }
 
+  .banner-img{
+
+    width:82%;
+  }
+
+  .top-logo{
+
+    width:85px;
+  }
+
 }
-  /* LOGO VIP */
-.top-logo{
 
-  width:30px;
+/* DESKTOP */
+@media(min-width:1024px){
 
-  margin-bottom:10px;
+  .main-box{
+
+    max-width:380px;
+  }
+
 }
 
-/* TEXT EXCLUSIVE */
-.banner-text{
-
-  width:220px;
-
-  margin-top:-10px;
-}
-/* BANNER */
-.banner-img{
-
-  width:35%;
-  max-width:430px;
-}
 </style>
 </head>
 
 <body>
 
-<!-- TOP BANNER -->
+<!-- TOP -->
 <div class="top-banner">
 
-  <!-- LOGO ATAS -->
   <img
     class="top-logo"
     src="https://cdn.it-cg.group/cbvipmoneysite/uploads/kUXxhyccQK5IqfFFgHSXlkJ4iUJConb7N2BSRTLA.webp"
-    alt="LOGO"
   >
 
-  <!-- BANNER -->
   <img
     class="banner-img"
     src="https://cdn.it-cg.group/cbvipmoneysite/uploads/I7AnkOXPJk9RLIWhN7liARtSMB44HT2p5SEs0ULF.webp"
-    alt="BONUS POINT VIP"
   >
 
 </div>
 
+<!-- BOX -->
 <div class="wrapper">
 
   <div class="main-box">
 
-    <!-- CONTENT -->
     <div class="content">
 
       <!-- LOGO -->
@@ -457,7 +348,6 @@ body{
 
         <img
           src="https://king2.cb88-rtpslot.com/new/logo.webp"
-          alt="CLICKBET88"
         >
 
       </div>
@@ -476,7 +366,10 @@ body{
       >
 
       <!-- BUTTON -->
-      <button class="btn" onclick="checkPoint()">
+      <button
+        class="btn"
+        onclick="checkPoint()"
+      >
         CHECK SEKARANG
       </button>
 
